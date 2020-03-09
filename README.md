@@ -7,7 +7,7 @@
 
 ## Установка
 ```sh
-pip install https://github.com/crinny/gdz/archive/master.zip
+pip install gdz
 ``` 
 
 ## Пример
