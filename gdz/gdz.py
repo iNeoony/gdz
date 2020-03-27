@@ -1,9 +1,9 @@
 import requests
 
-from gdz.types.book import Book
-from gdz.types.class_ import Class
-from gdz.types.structure_entry import StructureEntry
-from gdz.types.subject import Subject
+from .types.book import Book
+from .types.class_ import Class
+from .types.structure_entry import StructureEntry
+from .types.subject import Subject
 
 
 class GDZ:
