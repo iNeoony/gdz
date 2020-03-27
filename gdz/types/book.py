@@ -44,4 +44,3 @@ class Book(BaseModel):
     url: str
     priority: int
     updated_at: int
-

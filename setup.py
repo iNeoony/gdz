@@ -4,12 +4,12 @@ import os
 from setuptools import find_packages, setup
 
 NAME = "gdz"
-DESCRIPTION = "Враппер API приложения gdz.ru."
+DESCRIPTION = "Враппер API приложения ГДЗ: мой решебник (gdz.ru)"
 URL = "https://github.com/crinny/gdz"
 EMAIL = ""
 AUTHOR = "crinny"
 REQUIRES_PYTHON = ">=3.6.0"
-VERSION = "0.1.4"
+VERSION = "0.1.4.1"
 
 REQUIRED = ["requests", "pydantic"]
 
@@ -40,7 +40,5 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: Implementation :: CPython",
-        "Programming Language :: Python :: Implementation :: PyPy",
     ],
 )

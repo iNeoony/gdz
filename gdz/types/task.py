@@ -1,6 +1,9 @@
+from typing import List
+
 from pydantic import BaseModel
 
 from .book import Book
+from .edition import Edition
 
 
 class Task(BaseModel):
@@ -17,4 +20,4 @@ class ExtendedTask(BaseModel):
     paths: dict
     book: Book
     task: Task
-    editions: list
+    editions: List[Edition]
