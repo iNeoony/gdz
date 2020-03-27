@@ -2,8 +2,15 @@ from typing import List
 
 from pydantic import BaseModel
 
-from gdz.types.cover import Cover
-from gdz.types.price import Price
+
+class Cover(BaseModel):
+    title: str
+    url: str
+
+
+class Price(BaseModel):
+    purchase: int
+    download: int
 
 
 class Book(BaseModel):
@@ -37,3 +44,4 @@ class Book(BaseModel):
     url: str
     priority: int
     updated_at: int
+

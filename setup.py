@@ -9,7 +9,7 @@ URL = "https://github.com/crinny/gdz"
 EMAIL = ""
 AUTHOR = "crinny"
 REQUIRES_PYTHON = ">=3.6.0"
-VERSION = "0.1.3"
+VERSION = "0.1.4"
 
 REQUIRED = ["requests", "pydantic"]
 
