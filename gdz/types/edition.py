@@ -8,6 +8,11 @@ class Image(BaseModel):
     url: str
 
 
+class YoutubeVideo(BaseModel):
+    id: str
+    time: str
+
+
 class Edition(BaseModel):
     title: str
     description: str
@@ -15,4 +20,4 @@ class Edition(BaseModel):
     publisher_id: int
     texts: list
     images: List[Image]
-    youtube_videos: list
+    youtube_videos: List[YoutubeVideo]

@@ -14,7 +14,8 @@ class GDZ:
 
     def __init__(self):
         self.session = requests.Session()
-        self.main_info = requests.get(self.API_ENDPOINT).json()
+        self.session.headers = {"User-Agent": "okhttp/3.10.0"}
+        self.main_info = self.session.get(self.API_ENDPOINT).json()
 
     @property
     def classes(self) -> List[Class]:
@@ -31,9 +32,9 @@ class GDZ:
         return [Book(**external_data) for external_data in self.main_info["books"]]
 
     def book_structure(self, book: Book) -> List[StructureEntry]:
-        structure = requests.get(self.API_ENDPOINT + book.url).json()["structure"]
+        structure = self.session.get(self.API_ENDPOINT + book.url).json()["structure"]
         return [StructureEntry(**external_data) for external_data in structure]
 
     def task_extended(self, task: Task) -> ExtendedTask:
-        task_info = requests.get(self.API_ENDPOINT + task.url).json()
+        task_info = self.session.get(self.API_ENDPOINT + task.url).json()
         return ExtendedTask(**task_info)
