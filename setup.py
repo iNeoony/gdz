@@ -5,9 +5,9 @@ from setuptools import find_packages, setup
 
 NAME = "gdz"
 DESCRIPTION = "Враппер API приложения ГДЗ: мой решебник (gdz.ru)"
-URL = "https://github.com/crinny/gdz"
+URL = "https://github.com/iNeoony/gdz"
 EMAIL = ""
-AUTHOR = "crinny"
+AUTHOR = "iNeoony"
 REQUIRES_PYTHON = ">=3.6.0"
 VERSION = "0.1.5"
 
